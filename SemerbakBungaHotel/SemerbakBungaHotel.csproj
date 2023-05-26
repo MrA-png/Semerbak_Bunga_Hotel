@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EFE718E-CE20-4A3B-8814-7E1C02F912DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SemerbakBungaHotel</RootNamespace>
+    <AssemblyName>SemerbakBungaHotel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewGuest.Designer.cs">
+      <DependentUpon>AddNewGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingRoomForm.Designer.cs">
+      <DependentUpon>BookingRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InputPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPaymentForm.Designer.cs">
+      <DependentUpon>InputPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Koneksi.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageHolidayPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageHolidayPriceForm.Designer.cs">
+      <DependentUpon>ManageHolidayPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDailyPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDailyPriceForm.Designer.cs">
+      <DependentUpon>ManageDailyPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomAvailabilityReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomAvailabilityReport.Designer.cs">
+      <DependentUpon>RoomAvailabilityReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionReport1.Designer.cs">
+      <DependentUpon>TransactionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPaymentForm.Designer.cs">
+      <DependentUpon>ViewPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageBookingForm.Designer.cs">
+      <DependentUpon>ManageBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRoomFacilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRoomFacilityForm.Designer.cs">
+      <DependentUpon>ManageRoomFacilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRoomForm.Designer.cs">
+      <DependentUpon>ManageRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRoomRepairmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRoomRepairmentForm.Designer.cs">
+      <DependentUpon>ManageRoomRepairmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRoomTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRoomTypeForm.Designer.cs">
+      <DependentUpon>ManageRoomTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEmployeeForm.Designer.cs">
+      <DependentUpon>ManageEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageGuestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageGuestForm.Designer.cs">
+      <DependentUpon>ManageGuestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewGuest.resx">
+      <DependentUpon>AddNewGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingRoomForm.resx">
+      <DependentUpon>BookingRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPaymentForm.resx">
+      <DependentUpon>InputPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageHolidayPriceForm.resx">
+      <DependentUpon>ManageHolidayPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDailyPriceForm.resx">
+      <DependentUpon>ManageDailyPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="RoomAvailabilityReport.resx">
+      <DependentUpon>RoomAvailabilityReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionReport.resx">
+      <DependentUpon>TransactionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPaymentForm.resx">
+      <DependentUpon>ViewPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageBookingForm.resx">
+      <DependentUpon>ManageBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRoomFacilityForm.resx">
+      <DependentUpon>ManageRoomFacilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRoomForm.resx">
+      <DependentUpon>ManageRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRoomRepairmentForm.resx">
+      <DependentUpon>ManageRoomRepairmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRoomTypeForm.resx">
+      <DependentUpon>ManageRoomTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEmployeeForm.resx">
+      <DependentUpon>ManageEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageGuestForm.resx">
+      <DependentUpon>ManageGuestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
